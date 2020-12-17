@@ -10,6 +10,7 @@
 # how much money the user wasted.
 
 def main():
+
     full_name = ( input ( 'Enter your full name: '))  # Prompts user input full name
 
     print(full_name) # prints the user's input of full name
@@ -31,3 +32,11 @@ def main():
     loss_trim = round( ( ( segment_trim * total_trim ) - perimeter_box ), 3 )       # total trim wasted forumla
 
     loss_money = round( ( ( loss_trim/segment_trim ) * price_trim ), 2 )          # total loss of money from the wasted trim
+    
+    print( "Thank you, it appears your box has a perimeter of ", perimeter_box, " inches." )                 # prints the perimeter of the box the user needs
+
+    print("You will need to buy", total_trim, "trim boards.")                   # prints the total amount of trim the user needs
+
+    print("This will cost $", round(total_price_trim, 2), ".")                  # print the total of cost the total trim the user needs
+
+    print("You will waste", loss_trim, "inches trim, which equates to a waste of $", loss_money)                # prints the amount of trim and money wasted
