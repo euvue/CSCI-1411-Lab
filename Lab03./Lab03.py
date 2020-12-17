@@ -9,3 +9,11 @@
 # how much trim is wasted, and
 # how much money the user wasted.
 
+def main():
+    full_name = ( input ( 'Enter your full name: '))  # Prompts user input full name
+
+    print(full_name) # prints the user's input of full name
+
+    length_box = int ( input ('Enter the length of the box in inches: ' ))   # prompts user input for the length of the box
+
+    width_box = float ( input ('Enter the width of the box in inches: ' ))   # prompts user input for the width of the box
