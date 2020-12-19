@@ -36,3 +36,21 @@
     print("\nPrinting the full name using indexing")
     for i in range(len(fullName)):
             print(fullName[i], end ="")
+
+            
+# Python also allows indexing from right end of a string using negative indexes.
+    # Negative indexing starts from -1.
+    # Here is an example how we can use negative indexing to access the characters
+    # in reverse order.
+    print("\nPrinting the name is reverse order")
+    for i in range(-1, -(len(fullName)+1), -1):
+        print(fullName[i], end ="")
+        
+    # Slicing operator is used to access a contiguous sequence of characters or substring.
+    # following is an example of generating username from using the first 3 characters of
+    # last name combine with the first 3 characters of the first name.
+
+    userName = lastName[0:3] + firstName[0:3]
+    print("\nYour username is: ", userName)
+
+main()
