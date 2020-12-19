@@ -22,3 +22,17 @@
     n = int(input("Enter a number: "))
     print("Your full name is: ", fullName)
     print((firstName + " ")* n)
+    
+    # You can iterate through the characters using for loop
+
+    print("Printing the full name using for loop")
+    for ch in fullName:
+            print(ch, end ="")
+
+    # A string is sequence of character. Each individual character can be
+    # accessed by using index. In Python index starts from 0.
+    # Here is an example how we can run a loop to access all characters from a string.
+
+    print("\nPrinting the full name using indexing")
+    for i in range(len(fullName)):
+            print(fullName[i], end ="")
