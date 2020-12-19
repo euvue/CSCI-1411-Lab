@@ -5,7 +5,12 @@
 # Description: Lab 5. This lab shows various operations of String datatype
 
 # You can calculate the size/length of the string using len() function
+# Ask user input for first name and last name
+    firstName = input("Please enter your first name: ")
+    lastName = input("Please enter your last name: ")
 
+    # You can calculate the size/length of the string using len() function
+    
     length = len(firstName)
     print("The length of your first name is: ", length)
 
@@ -35,9 +40,9 @@
 
     print("\nPrinting the full name using indexing")
     for i in range(len(fullName)):
-            print(fullName[i], end ="")
+        print(fullName[i], end ="")
 
-            
+
 # Python also allows indexing from right end of a string using negative indexes.
     # Negative indexing starts from -1.
     # Here is an example how we can use negative indexing to access the characters
