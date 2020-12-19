@@ -6,11 +6,13 @@
 
 # You can calculate the size/length of the string using len() function
 # Ask user input for first name and last name
+def main():
+
     firstName = input("Please enter your first name: ")
     lastName = input("Please enter your last name: ")
 
     # You can calculate the size/length of the string using len() function
-    
+
     length = len(firstName)
     print("The length of your first name is: ", length)
 
